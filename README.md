@@ -37,6 +37,7 @@ resolution workflow.
 | Test Account | walma (Wanda Aima — Credit Department) |
 
 ---
+
 ## What I Implemented
 
 ### Tier 1 — Default Domain Policy
@@ -59,7 +60,9 @@ Configured via Group Policy Management Editor, applying domain-wide to all 28 Ar
 Configured via Active Directory Administrative Center in the Password Settings Container under System. Named "User Account Access Policy" with Precedence 1, the highest priority in the domain, overriding 
 the Default Domain Policy for the groups it targets. Applied directly to: Domain Computers, Domain Guests, Domain Users.
 This two-tier structure mirrors how enterprise environments actually operate, a baseline for everyone, stricter controls where it matters.
+
 ---
+
 ## The Lockout Test
 
 I triggered a deliberate lockout on domain user walma (Wanda Aima) to ascertain the enforcement of the policy configuration, by entering incorrect credentials three consecutive times on ARABELLA-PC001.
@@ -73,7 +76,9 @@ the domain controller. The domain had seen the lockout, recorded it, and was rea
 
 **Resolution:**
 Account unlocked from ARABELLA-DC01 via PowerShell.
+
 ---
+
 ## What This Lab Demonstrates
 
 This lab proves the ability to harden a live Active Directory domain beyond basic setup — implementing structured password enforcement, configuring granular Fine-Grained Policies for targeted user groups, 
