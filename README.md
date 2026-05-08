@@ -1,6 +1,6 @@
 
 # Arabella Inc. — Password Policy Enforcement Lab
-## Locking Down the Domain — Security Hardening at Arabella Inc.
+## Security Hardening at Arabella Inc.
 
 Central command is part of the efficiency Arabella Inc. gained post-migration, but a domain without enforced password standards is still a liability. Centralization means every user account, 
 every workstation, and every department folder now runs through one authentication layer. It is also a single point of failure if credentials are weak, stale, or unprotected. 
@@ -9,6 +9,7 @@ workflow, the response would be lax hence encouraging the threat actor to encroa
 I designed and implemented a two-tier password security structure for arabellainc.local, a domain-wide baseline through Group Policy and a stricter fine-grained Password Policy targeting all domain users. 
 I then ran a test on the lockout policy by triggering it deliberately, verified the domain controller logged it correctly, and resolved it the way as a standard practice in the real world. Everything here
 is documented, configuration before testing, evidence during testing and resolution after.
+
 ---
 ## How This Connects to Lab 1
 
@@ -22,6 +23,7 @@ The AD migration established:
 - Centralized identity management via Active Directory
 This lab adds the security layer on top of that foundation. The same domain, the same users, the same machines, now with enforced password standards, automatic lockout enforcement, and a documented
 resolution workflow.
+
 ---
 ## The Environment
 
