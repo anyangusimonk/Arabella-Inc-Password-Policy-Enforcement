@@ -78,6 +78,10 @@ the domain controller. The domain had seen the lockout, recorded it, and was rea
 **Resolution:**
 Account unlocked from ARABELLA-DC01 via PowerShell.
 
+```PowerShell
+Unlock-ADAccount -Identity "walma"
+Write-Host "Account unlocked successfully" -ForegroundColor Green
+```
 ---
 
 ## What This Lab Demonstrates
