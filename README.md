@@ -1,5 +1,5 @@
 
-# Arabella Inc. — Password Policy Enforcement Lab
+# Arabella Inc. — Password Policy Enforcement
 ## Security Hardening at Arabella Inc.
 
 Central command is part of the efficiency Arabella Inc. gained post-migration, but a domain without enforced password standards is still a liability. Centralization means every user account, 
