@@ -55,6 +55,7 @@ Configured via Group Policy Management Editor, applying domain-wide to all 28 Ar
 | Reset lockout counter after | 7 minutes | Clears bad attempt count after 7 minutes |
 | Administrator account lockout | Enabled | No privileged account exemptions |
 
+
 ### Tier 2 — Fine-Grained Password Policy
 
 Configured via Active Directory Administrative Center in the Password Settings Container under System. Named "User Account Access Policy" with Precedence 1, the highest priority in the domain, overriding 
