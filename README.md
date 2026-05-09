@@ -72,7 +72,7 @@ I triggered a deliberate lockout on domain user walma (Wanda Aima) to ascertain 
 The login screen returned "The referenced account is currently locked out and may not be logged on to", confirming the policy enforced at the client level.
 
 **On the Server:**
-Event ID 4740 appeared in the Security Event Log on ARABELLA-DC01 within seconds — "A user account was locked out" logged under Task Category: User Account Management, timestamped and attributed to 
+Event ID 4740 appeared in the Security Event Log on ARABELLA-DC01, "A user account was locked out" logged under Task Category: User Account Management, timestamped and attributed to 
 the domain controller. The domain had seen the lockout, recorded it, and was ready to be queried.
 
 **Resolution:**
@@ -94,7 +94,7 @@ production environments.
 
 - **Local Security Policy is not the right tool in a domain.** - Settings configured there are overridden by the Default Domain Policy. Always use Group Policy Management for domain-wide enforcement.
 - **Minimum password age blocks resets.** - If set above 0 days, password resets via PowerShell will fail with a permissions error until it is temporarily set to 0.
-- **Fine-Grained Policies require AD Administrative Center.** - They live in System → Password Settings Container — not in Group Policy Management.
+- **Fine-Grained Policies require AD Administrative Center.** - They live in System → Password Settings Container, not in Group Policy Management.
 - **Precedence determines which policy wins.** - Lower number = higher priority. Precedence 1 overrides everything else.
 - **Event-log activity** - Once joined to a domain, access to the workstations (Client-side) security log is denied, only the Domain controller (Server-side) is accessible to the admins. Incase of a lockout
   after a failed logon event, it is recorded and queried on the Domain controller.
